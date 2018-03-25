@@ -1,0 +1,101 @@
+#wrapper {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+p, ul {
+  line-height: 1.4;
+  color: #333;
+}
+p {
+  margin-top: 0;
+}
+.cover-photo {
+  background-image: url("../photos/pano.jpg");
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 350px;
+}
+.profile-content {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: -140px;
+}
+.profile-info {
+  position: relative;
+  padding: 20px 0;
+}
+.profile-photo {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px #666;
+  float: left;
+  margin-right: 30px;
+}
+.profile-name {
+  margin-top: 140px;
+}
+.biography {
+  box-sizing: border-box;
+  float: left;
+  width: 65%;
+}
+blockquote {
+  box-sizing: border-box;
+  float: right;
+  width: 30%;
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 36px;
+  color: #464;
+  line-height: 1.2;
+  border-top: 5px solid #464;
+  border-bottom: 5px solid #464;
+}
+.intro {
+  font-size: 20px;
+  color: #666;
+  padding-top: 20px;
+}
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+  color: #666;
+}
+@media screen and (max-width: 640px) {
+  .cover-photo {
+    background-image: url("../photos/pano.jpg");
+  }
+  .profile-photo {
+    float: none;
+    margin: 0;
+  }
+  .profile-info {
+    text-align: center;
+  }
+  .profile-content {
+    margin-top: -200px
+  }
+  .profile-name {
+    margin-top: 20px;
+  }
+  .biography {
+    float: none;
+    width: 100%;
+  }
+  blockquote {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
