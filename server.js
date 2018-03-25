@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 
-const PORT        = process.env.PORT || 8080;
+const PORT        = process.env.PORT || 3000;
 const ENV         = process.env.ENV || "development";
 const express     = require("express");
 const bodyParser  = require("body-parser");
@@ -43,6 +43,7 @@ app.use("/api/users", usersRoutes(knex));
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
