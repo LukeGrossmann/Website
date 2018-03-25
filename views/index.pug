@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/loader.css" type="text/css" />
+    <link class="remove" rel="stylesheet" href="/styles/loader.css" type="text/css" />
     <link rel="stylesheet" href="/styles/resume.css" type="text/css" />
     <link rel="stylesheet" href="/styles/bio.css" type="text/css" />
+    <link class="remove" rel="stylesheet" href="/styles/welcome-user.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-
   </head>
 
   <body id="main-page-body">
 
 
-    <div class="overlay-loading">
+    <div class="overlay-loading remove">
       <div class="loader">
         <span></span>
         <span></span>
@@ -36,9 +37,35 @@
         <span></span>
       </div>
     </div>
-    <script type="text/javascript" src="/scripts/loading.js"></script>
 
-    <div class="background">
+
+      <div class="welcome-background remove">
+        <div class="container">
+          <div class="row flex-column justify-content-center align-items-center text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h1 id="time"></h1>
+              <h3 id="datetime" class="display-5"></h3>
+              <h2 id="greeting"></h2>
+              <h3>
+                <ul class="first-text hidden">
+                  <li>W</li>
+                  <li>E</li>
+                  <li>L</li>
+                  <li>C</li>
+                  <li>O</li>
+                  <li>M</li>
+                  <li>E</li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="background-background">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <br />
 
@@ -52,7 +79,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="#contact" class="nav-link" role="tab" data-toggle="tab">Portfolio</a>
+              <a href="#lab" class="nav-link" role="tab" data-toggle="tab">Portfolio</a>
             </li>
 
             <li class="nav-item">
@@ -61,14 +88,16 @@
           </ul>
 
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="bio">
+            <div role="tabpanel" class="tab-pane fade" id="bio">
               include bio-show.pug
             </div>
             <div role="tabpanel" class="tab-pane fade" id="resume">
               include resume-show.pug
 
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="contact">3</div>
+            <div role="tabpanel" class="tab-pane fade" id="lab">
+              include portfolio.pug
+            </div>
             <div role="tabpanel" class="tab-pane fade" id="game">
               <div class="game">
                 <div class="score">0</div>
@@ -78,10 +107,10 @@
             </div>
 
           </div>
-
-              <script type="text/javascript" src="/scripts/game.js"></script>
-
-
+    <script type="text/javascript" src="/scripts/portfolio.js"></script>
+    <script type="text/javascript" src="/scripts/resume.js"></script>
+    <script type="text/javascript" src="/scripts/game.js"></script>
+    <script class="remove" type="text/javascript" src="/scripts/loading.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
