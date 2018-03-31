@@ -1,8 +1,13 @@
 #main-page-body, #main-page-html {
     height: 100%;
 }
+
+#nav-tab-font-family {
+  font-family: sans-serif;
+  color:black;
+}
+
 .background-background {
-  /* The image used */
   background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 
     background-size: cover;
@@ -24,7 +29,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
   opacity: 0.85;
 }
