@@ -1,21 +1,23 @@
-
+#resume-text-style {
+  font-family: sans-serif;
+}
 * {
   outline: none;
 }
 
-a {
+.a-tag-resume {
   text-decoration: none;
   color: #555;
   display: block;
   transition-duration: 0.3s;
 }
 
-ul {
+.ul-tag-resume {
   list-style-type: none;
   padding: 0;
 }
 
-h3 {
+.h3-resume {
   color: #3d405b;
   margin: 10px 0;
   text-transform: uppercase;
@@ -175,7 +177,7 @@ h3 {
   transition-duration: 0.3s;
 }
 .resume .func:hover > div:hover h3 {
-  letter-spacing: 1.6px;
+  letter-spacing: 1.2px;
 }
 .resume .func:hover > div:hover h3 i {
   transform: scale(1.2);
