@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#jump').smoothScroll({speed:1500});
+  // $('#jump').smoothScroll({speed:1500});
 
   $("button").click(function(){
     var target = $(this).attr("href");
@@ -11,5 +11,11 @@ $(document).ready(function(){
   $('.project').css({'height':cw+'px'});
 
   $("#first").click();
+
+  $("#landing-2").scroll(function(){
+    this.css({
+      'position':'fixed'
+    });
+  });
 
 });
