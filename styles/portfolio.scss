@@ -2,22 +2,24 @@
   max-height:100vh;
   color:#fff;
 }
-#landing{
+#landing-2{
   height:100vh;
-  background:url(../photos/landscape2.jpg) no-repeat center center fixed;
+  background:url(../photos/landscape2.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
   -moz-background-size:cover;
+  position:sticky;
+  top: 0.5px;
 }
-#portfolio{
-  background:url(../photos/trees.jpg) no-repeat center center fixed;
+#portfolio-2{
+  background:url(../photos/blue.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
   -moz-background-size:cover;
   min-height:100vh;
-  position: relative;
+  position: sticky;
 }
 /* end landing page */
 
@@ -38,7 +40,6 @@ a:hover,a:focus{text-decoration:none;}
   stroke-dashoffset: -474;
   stroke-width: 8px;
   fill: transparent;
-  /* modify this with the color you want */
   stroke: #19f6e8;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
@@ -76,6 +77,8 @@ $grey-text: #747474;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  font-family:sans-serif;
+  position: relative;
 
   .project-card {
     width: percentage(300/1060);
@@ -109,12 +112,17 @@ $grey-text: #747474;
         }
       }
 
-      p {
-        font: serif;
+      .project-description {
+        font: sans-serif;
         padding-top: 0px;
         margin-top: 0px;
         margin-bottom: 0;
+        color:white;
+        text-shadow:black 0px 0px 10px;
       }
     }
   }
+}
+.header-style {
+  text-shadow:white 0px 0px 10px;
 }
