@@ -18,7 +18,7 @@ $(function() {
   }
 
   function firstFadeIn (callback) {
-    $(".overlay-loading").delay(4000).fadeOut("slow", function () {
+    $(".overlay-loading").delay(3000).fadeOut("slow", function () {
       $('.welcome-background').fadeIn('slow');
         setTimeout(function() {
         $('.first-text').removeClass('hidden');
@@ -29,7 +29,7 @@ $(function() {
 
 
   function secondFadeIn () {
-    $('.welcome-background').delay(6000).fadeOut("slow", function () {
+    $('.welcome-background').delay(3500).fadeOut("slow", function () {
       $('.background-background').fadeIn("slow");
   $(".remove").remove();
 
