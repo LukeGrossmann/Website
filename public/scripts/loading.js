@@ -14,8 +14,6 @@ $(document).ready(function () {
             img.onload = function() {
                 var index = list.indexOf(this);
                 if (index !== -1) {
-                    // remove image from the array once it's loaded
-                    // for memory consumption reasons
                     list.splice(index, 1);
                 }
             }
@@ -24,7 +22,14 @@ $(document).ready(function () {
         }
     }
 
-    preloadImages(["../photos/landscape2.jpg", "../photos/panoH@W.jpg", "../photos/blue.jpg"]);
+    if (date.getMonth() <= 3 || date.getMonth() > 7 ) {
+      preloadImages(["../photos/landscape2.jpg", "../photos/panoH@W.jpg", "../photos/blue.jpg"]);
+    }
+    else if (date.getMonth() > 3 && date.getMonth() <= 7 ) {
+      preloadImages(["../photos/Summer-landing.jpg", "../photos/Summer-bio3.jpg", "../photos/summer-portfolio.jpg"]);
+
+    }
+
 
     var dt = new Date().toDateString();
     document.getElementById("datetime").innerHTML = dt;
