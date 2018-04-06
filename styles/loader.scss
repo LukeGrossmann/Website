@@ -87,17 +87,17 @@ $speed: 2.5s;
 
 @keyframes load {
   0% {
-    background: #ccc;
+    background: black;
     margin-top: 25%;
     height: 10%;
   }
   50% {
-    background: #444;
+    background: white;
     height: 100%;
     margin-top: 0%;
   }
   100% {
-    background: #ccc;
+    background: #19f6e8;
     height: 10%;
     margin-top: 25%;
   }
