@@ -44,10 +44,32 @@ app.use("/api/users", usersRoutes(knex));
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/index_fall_winter", (req, res) => {
+  res.render("index_fall_winter");
+});
+app.get("/index_spring_summer", (req, res) => {
+  res.render("index_spring_summer");
+});
 
-// app.get("/scaled_photos/:filename/:width/:height", (req, res) => {
-//   res.render("index");
-// });
+app.use(function(req, res, next){
+  res.status(404);
+
+  // respond with html page
+  if (req.accepts('html')) {
+    res.render('404', { url: req.url });
+    return;
+  }
+
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: 'Not found' });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type('txt').send('Not found');
+});
+
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
