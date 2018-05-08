@@ -4,7 +4,7 @@
 }
 #landing-2{
   height:100vh;
-  background:url(../photos/landscape2.jpg) no-repeat center center;
+  background:url(../photos/Summer-landing.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -14,7 +14,7 @@
   top: 0.5px;
 }
 #portfolio-2{
-  background:url(../photos/blue.jpg) no-repeat center center;
+  background:url(../photos/summer-portfolio.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -85,10 +85,11 @@ $grey-text: #747474;
   .project-card {
     width: percentage(300/1060);
     margin-top: 35px;
-    box-shadow: 0px 2px 4px -1px $grey-text;
+    margin-bottom: 35px;
+    box-shadow: 0px 2px 4px -1px white;
 
     &:hover {
-      box-shadow: 0px 4px 8px -1px $grey-text;
+      box-shadow: 0px 4px 8px -1px black;
       width: percentage(300/1060);
     }
 
@@ -110,7 +111,7 @@ $grey-text: #747474;
         padding-bottom: 0px;
 
         &:hover {
-          color: lighten(black, 30);
+          color: #19f6e8;
         }
       }
 
@@ -120,11 +121,7 @@ $grey-text: #747474;
         margin-top: 0px;
         margin-bottom: 0;
         color:white;
-        text-shadow:black 0px 0px 10px;
       }
     }
   }
-}
-.header-style {
-  text-shadow:white 0px 0px 10px;
 }

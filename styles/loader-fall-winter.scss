@@ -85,20 +85,24 @@ $speed: 2.5s;
   }
 }
 
+
 @keyframes load {
   0% {
-    background: black;
+    background: #ccc;
     margin-top: 25%;
     height: 10%;
   }
   50% {
-    background: white;
+    background: #444;
     height: 100%;
     margin-top: 0%;
   }
   100% {
-    background: #19f6e8;
+    background: #ccc;
     height: 10%;
     margin-top: 25%;
   }
 }
+
+
+
