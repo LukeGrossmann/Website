@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
-  $(".overlay-loading")
+
+  $(".overlay-loading");
 
   $(window).on("load", function() {
+
 
     function preloadImages(array) {
         if (!preloadImages.list) {
@@ -22,15 +24,13 @@ $(document).ready(function () {
         }
     }
 
-    if (date.getMonth() <= 3 || date.getMonth() > 7 ) {
-      preloadImages(["../photos/landscape2.jpg", "../photos/panoH@W.jpg", "../photos/blue.jpg"]);
-    }
-    else if (date.getMonth() > 3 && date.getMonth() <= 7 ) {
-      preloadImages(["../photos/Summer-landing.jpg", "../photos/Summer-bio3.jpg", "../photos/summer-portfolio.jpg"]);
+    // if (date.getMonth() <= 3 || date.getMonth() > 7 ) {
+    //   preloadImages(["../photos/landscape2.jpg", "../photos/panoH@W.jpg", "../photos/blue.jpg"]);
+    // }
+    // else if (date.getMonth() > 3 && date.getMonth() <= 7 ) {
+    //   preloadImages(["../photos/Summer-landing.jpg", "../photos/Summer-bio3.jpg", "../photos/summer-portfolio.jpg"]);
 
-    }
-
-
+    // }
     var dt = new Date().toDateString();
     document.getElementById("datetime").innerHTML = dt;
 
@@ -46,6 +46,8 @@ $(document).ready(function () {
     if (time >= 17) {
       document.getElementById("greeting").innerHTML = "Good Evening, User.";
     }
+
+    $(".middle-letter").css('color', 'black');
 
 
     function firstFadeIn (callback) {
