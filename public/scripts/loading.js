@@ -38,13 +38,13 @@ $(document).ready(function () {
     var time = d.getHours();
 
     if (time < 12) {
-      document.getElementById("greeting").innerHTML = "Good Morning, User.";
+      document.getElementById("greeting").innerHTML = "Good Morning";
     }
     if (time >= 12 && time < 17) {
-      document.getElementById("greeting").innerHTML = "Good Afternoon, User.";
+      document.getElementById("greeting").innerHTML = "Good Afternoon";
     }
     if (time >= 17) {
-      document.getElementById("greeting").innerHTML = "Good Evening, User.";
+      document.getElementById("greeting").innerHTML = "Good Evening";
     }
 
     $(".middle-letter").css('color', 'black');
