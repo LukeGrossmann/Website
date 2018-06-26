@@ -341,7 +341,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  top: 52%;
+  top: 25%;
   transition-duration: 0.3s;
 }
 .resume .func .skills-soft ul li span {
@@ -392,4 +392,21 @@
 
 .contact-text-color {
   color:black;
+}
+.BCE-content, .fable-content, .bimini-content {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.75;
+  border: 10px;
+  border-radius: 10px;
+}
+.BCE-content p, .fable-content p, .bimini-content p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color:white;
+  opacity:1;
 }

@@ -11,6 +11,12 @@
 .p-bio {
   margin-top: 0;
 }
+.intro:hover, .text-50:hover, .text-10:hover {
+  background-color: wheat;
+  padding:10px;
+  border: 10px;
+  border-radius:10px;
+}
 .cover-photo {
   background-image: url(../photos/Summer-bio3.jpg);
   background-size: cover;

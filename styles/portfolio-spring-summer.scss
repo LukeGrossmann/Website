@@ -122,6 +122,15 @@ $grey-text: #747474;
         margin-bottom: 0;
         color:white;
       }
+      .BCEBCE:hover, .map-x:hover, .chattyApp:hover, .jungleRails:hover, .tweeter:hover, .wikiMap:hover, .tinyApp:hover {
+        background-color: black;
+        opacity: .80;
+        border: 10px;
+        border-radius: 10px;
+        padding:5px;
+
+
+      }
     }
   }
 }
