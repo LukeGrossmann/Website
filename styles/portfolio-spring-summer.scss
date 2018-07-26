@@ -104,14 +104,17 @@ $grey-text: #747474;
       border-top: 1px solid lighten($grey-text, 42);
 
       a {
-        font-family: sans-serif;
+        font-family: serif;
         text-decoration: none;
-        color: black;
+        color: aqua;
         margin-bottom: 0px;
         padding-bottom: 0px;
 
         &:hover {
-          color: #19f6e8;
+          border: 1px;
+          border-color: aqua;
+          padding: 5px;
+          border-style: solid
         }
       }
 
@@ -122,7 +125,7 @@ $grey-text: #747474;
         margin-bottom: 0;
         color:white;
       }
-      .BCEBCE:hover, .map-x:hover, .chattyApp:hover, .jungleRails:hover, .tweeter:hover, .wikiMap:hover, .tinyApp:hover {
+      .BCEBCE:hover, .map-x:hover, .chattyApp:hover, .jungleRails:hover, .tweeter:hover, .wikiMap:hover, .tinyApp:hover .portfolio-card-p {
         background-color: black;
         opacity: .80;
         border: 10px;
