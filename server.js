@@ -36,6 +36,11 @@ app.use("/styles", sass({
   outputStyle: 'expanded'
 }));
 app.use(express.static("public"));
+app.use('/scripts2', express.static(__dirname + '/node_modules/lightbox2/dist/js/'));
+app.use('/styles2', express.static(__dirname + '/node_modules/lightbox2/dist/css/'));
+// app.use('/images', express.static(__dirname + '/node_modules/lightbox2/dist/images/'));
+
+
 
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
