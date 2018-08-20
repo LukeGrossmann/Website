@@ -37,19 +37,18 @@
 }
 .profile-photo {
   box-sizing: border-box;
-  width: 240px;
+/*  width: 240px;
   height: 240px;
-  border: 5px solid white;
+  border: 5px solid white;*/
   box-shadow: 0px 0px 15px #666;
   float: left;
   margin-right: 30px;
 }
 .profile-name {
-  margin-top: 140px;
+  margin-top: 240px;
 }
 .biography {
   box-sizing: border-box;
-  float: left;
   width: 65%;
 }
 blockquote {
@@ -110,5 +109,68 @@ blockquote {
     width: 100%;
     margin: 20px 0;
     text-align: center;
+  }
+}
+
+
+/*Making fonts bigger on smaller screens to keep the readibility good and to keep the footer on the bottom of the page*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .p-bio {
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 30px;
+  }
+  blockquote {
+    font-size: 55px;
+  }
+}
+/*iPhone 2G-4S in portrait*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
+  .p-bio {
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 30px;
+  }
+  blockquote {
+    font-size: 55px;
+  }
+}
+
+
+/*iPhone 5 & 5S in portrait*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .p-bio {
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 30px;
+  }
+  blockquote {
+    font-size: 55px;
+  }
+}
+
+/*ipad pro*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5)  {
+  .p-bio {
+    font-size: 20px;
+  }
+  .intro {
+    font-size: 25px;
   }
 }

@@ -86,7 +86,6 @@
 }
 .resume .base .profile .photo img {
   width: 100%;
-  border-radius: 50%;
 }
 .resume .base .profile .info {
   text-align: center;
@@ -393,20 +392,61 @@
 .contact-text-color {
   color:black;
 }
-.BCE-content, .fable-content, .bimini-content {
+.BCE-content {
   position: absolute;
   width:400px;
   height: 400px;
   z-index: 1000;
   background-color: black;
-  opacity: 0.75;
   border: 10px;
   border-radius: 10px;
 }
-.BCE-content p, .fable-content p, .bimini-content p {
+.BCE-content p {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   color:white;
   opacity:1;
 }
+/*added padding around resume to keep footer at the bottom*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  #resume-text-style {
+    font-family: sans-serif;
+    padding: 45px 0px;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  #resume-text-style {
+    font-family: sans-serif;
+    padding: 45px 0px;
+  }
+}
+/*Iphone 6,7,8 plus*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+  #resume-text-style {
+    font-family: sans-serif;
+    padding: 45px 0px;
+  }
+}
+
+/*iphone X*/
+/*@media only screen
+and (min-device-width : 375px)
+and (max-device-height : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  #resume-text-style {
+    font-family: sans-serif;
+    padding: 233px 0px;
+  }
+}*/

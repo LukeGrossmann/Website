@@ -6,6 +6,11 @@
   font-family: sans-serif;
   color:black;
 }
+.nav.nav-tabs {
+  z-index: 3;
+  position: sticky;
+  top: 0.5px;
+}
 
 .background-background {
   background-image: url("../photos/MainBackground.jpg");
@@ -60,6 +65,53 @@ General
   overflow: hidden;
 }
 
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+  #game {
+    padding: 125px 0px;
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  #game {
+    padding: 125px 0px;
+  }
+}
+
+/*iPhone 2G-4S in portrait*/
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 400px)
+and (orientation : portrait) {
+  #game {
+    padding: 423px 0px;
+  }
+}*/
+/*Ipad*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  #game {
+    padding: 60px 0px;
+  }
+}
+/*ipad pro*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  #game {
+    padding: 70px 0px;
+  }
+}
+
+
 /*================================================
 
 Score
@@ -82,11 +134,8 @@ Stage
 ================================================*/
 
 .stage {
-  left: 0;
   margin: auto;
-  position: absolute;
-  right: 0;
-  z-index: 2;
+  position: relative;
 }
 
 /*================================================
