@@ -5,6 +5,7 @@
   <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="/styles/layout-fall-winter.css" type="text/css" />
     <link class="remove" rel="stylesheet" href="/styles/loader-fall-winter.css" type="text/css" />
@@ -13,6 +14,8 @@
     <link class="remove" rel="stylesheet" href="/styles/welcome-user-fall-winter.css" type="text/css" />
     <link rel="stylesheet" href="/styles/portfolio-fall-winter.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/fall-winter-footer.css" type="text/css" />
+    <link href="styles2/lightbox.css" rel="stylesheet">
   </head>
 
   <body id="main-page-body">
@@ -66,7 +69,7 @@
 
 
     <div class="background-background">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding:unset;">
         <br />
 
         <ul class="nav nav-tabs">
@@ -92,10 +95,12 @@
 
           <div role="tabpanel" class="tab-pane active" id="bio">
             include Bio-show.pug
+
           </div>
 
           <div role="tabpanel" class="tab-pane fade" id="resume">
             include resume-show.pug
+
           </div>
 
           <div role="tabpanel" class="tab-pane fade" id="lab">
@@ -108,15 +113,19 @@
               <div class="stage" style="height: 0px;"></div>
             </div>
           </div>
+          include footer.pug
         </div>
       </div>
     </div>
+
     <!-- <script type="text/javascript" src="/scripts/bio.js"></script> -->
+    <script type="text/javascript" src="/scripts/footer.js"></script>
     <script type="text/javascript" src="/scripts/portfolio.js"></script>
     <script type="text/javascript" src="/scripts/resume.js"></script>
     <script type="text/javascript" src="/scripts/game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script class="remove" type="text/javascript" src="/scripts/loading.js"></script>
+    <script src="scripts2/lightbox.js"></script>
   </body>
 </html>
