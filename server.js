@@ -38,7 +38,7 @@ app.use("/styles", sass({
 app.use(express.static("public"));
 app.use('/scripts2', express.static(__dirname + '/node_modules/lightbox2/dist/js/'));
 app.use('/styles2', express.static(__dirname + '/node_modules/lightbox2/dist/css/'));
-// app.use('/images', express.static(__dirname + '/node_modules/lightbox2/dist/images/'));
+app.use('/images', express.static(__dirname + '/node_modules/lightbox2/dist/images/'));
 
 
 
@@ -58,7 +58,6 @@ app.get("/index_spring_summer", (req, res) => {
 
 app.use(function(req, res, next){
   res.status(404);
-  // lll
 
   // respond with html page
   if (req.accepts('html')) {
