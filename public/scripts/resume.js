@@ -38,8 +38,6 @@
   });
 
   var bce = $('.BCE');
-  var fable = $('.fable');
-  var bimini = $('.bimini');
 
   bce.on('mouseenter', function(){
     $('<div class="BCE-content"> <p>Redeveloping the BCE web platform to optimize functionality and security (Secure Sockets Layer implementation) while redesigning the U/I, U/X. Responsible for testing servers/processes, deployment and version control as well as managing all aspects of the project. While employed in this position I broadened my skill-set by utilizing environments and platforms that were unfamiliar to me as well as furthered my depth within technical tools that I have previously been comfortable with.</p></div>').appendTo('.BCE');
