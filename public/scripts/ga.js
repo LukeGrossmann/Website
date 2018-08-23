@@ -14,8 +14,8 @@ $(function() {
     if (category && action && label) {
       ga('send', 'event', category, action, label, null);
     }
-
   });
+});
 
 
 
