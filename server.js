@@ -13,7 +13,7 @@ const knexConfig  = require("./knexfile");
 const knex        = require("knex")(knexConfig[ENV]);
 const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
-
+const probe = require('pmx').probe();
 // Seperated Routes for each Resource
 const usersRoutes = require("./routes/users");
 
@@ -73,6 +73,16 @@ app.use(function(req, res, next){
   // default to plain-text. send()
   res.type('txt').send('Not found');
 });
+
+// // Keymetrics monitoring
+// var counter = 0;
+
+// var metric = probe.metric({
+//   name    : 'Realtime user',
+//   value   : function() {
+//     return counter;
+//   }
+// });
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
