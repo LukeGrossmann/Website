@@ -3,7 +3,7 @@ ga('create', 'UA-124510471-1', 'auto');
 ga('send', 'pageview');
 
 $(function() {
-  $('.option-1, option-2').on('click', function(e) {
+  $('.option-1, .option-2').on('click', function(e) {
     var $e = $(e.currentTarget);
 
     var category = $e.attr('data-gaCategory');
