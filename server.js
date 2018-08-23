@@ -74,15 +74,19 @@ app.use(function(req, res, next){
   res.type('txt').send('Not found');
 });
 
-// // Keymetrics monitoring
-// var counter = 0;
+//key metrics usage
+var counter = 0;
 
-// var metric = probe.metric({
-//   name    : 'Realtime user',
-//   value   : function() {
-//     return counter;
-//   }
-// });
+var metric = probe.metric({
+  name    : 'Realtime user',
+  value   : function() {
+    return counter;
+  }
+});
+
+setInterval(function() {
+  counter++;
+}, 100);
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
