@@ -2,7 +2,20 @@
 ga('create', 'UA-124510471-1', 'auto');
 ga('send', 'pageview');
 
+$(function() {
+  $('.option-1, option-2').on('click', function(e) {
+    var $e = $(e.currentTarget);
 
+    var category = $e.attr('data-gaCategory');
+    var action = $e.attr('data-gaAction');
+    var label = $e.attr('data-gaLabel');
+
+    console.log(category, action, label);
+    if (category && action && label) {
+      ga('send', 'event', category, action, label, null);
+    }
+
+  });
 
 
 
