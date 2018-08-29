@@ -1,8 +1,8 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-section {
+/*section {
     padding: 20px 0;
-}
+}*/
 
 section .section-title {
     text-align: center;
@@ -16,6 +16,9 @@ section .section-title {
     position: -webkit-sticky;
     bottom:0.5px;
     z-index: 3;
+    border-top-style: solid;
+    border-color: black;
+    border-width: thin;
 }
 #footer h5{
   padding-left: 10px;
