@@ -38,10 +38,16 @@
   });
 
   var bce = $('.BCE');
+  var nexial = $('.Nexial');
 
   bce.on('mouseenter', function(){
-    $('<div class="BCE-content"> <p>Redeveloping the BCE web platform to optimize functionality and security (Secure Sockets Layer implementation) while redesigning the U/I, U/X. Responsible for testing servers/processes, deployment and version control as well as managing all aspects of the project. While employed in this position I broadened my skill-set by utilizing environments and platforms that were unfamiliar to me as well as furthered my depth within technical tools that I have previously been comfortable with.</p></div>').appendTo('.BCE');
-
+    $('<div class="BCE-content"> <p><i class="far fa-hand-point-right"></i> Redeveloped the BCE web platform to optimize functionality and security (Secure Sockets Layer implementation).<br/><i class="far fa-hand-point-right"></i> Redesigned the U/I/U/X.<br/><i class="far fa-hand-point-right"></i> Responsible for testing servers/processes, deployment and version control.</p></div>').appendTo('.BCE');
+  });
+  nexial.on('mouseenter', function(){
+    $('<div class="Nexial-content"> <p><i class="far fa-hand-point-right"></i> Updated obsolete NPM packages in the backend Node server.<br/><i class="far fa-hand-point-right"></i> Introduced a more functional and secure email verification process while integrating new email features.<br/><i class="far fa-hand-point-right"></i> Troubleshot issues affecting production, stage, and development environments as requested.</p></div>').appendTo('.Nexial');
+  });
+  nexial.on('mouseleave', function() {
+    $('.Nexial-content').slideUp(800);
   });
   bce.on('mouseleave', function() {
     $('.BCE-content').slideUp(800);
