@@ -392,19 +392,29 @@
 .contact-text-color {
   color:black;
 }
+.Nexial-content {
+  width: 800px;
+  height: auto;
+  z-index: 3;
+  background-color: #333;
+  border: 10px;
+  border-radius: 10px;
+}
+.Nexial-content p {
+  padding:10px;
+  color:white;
+  opacity:1;
+}
 .BCE-content {
-  position: absolute;
-  width:400px;
-  height: 400px;
-  z-index: 1000;
-  background-color: black;
+  width: 800px;
+  height: auto;
+  z-index: 3;
+  background-color: #333;
   border: 10px;
   border-radius: 10px;
 }
 .BCE-content p {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+  padding: 10px;
   color:white;
   opacity:1;
 }
