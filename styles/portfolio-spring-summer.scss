@@ -106,15 +106,15 @@ $grey-text: #747474;
       a {
         font-family: serif;
         text-decoration: none;
-        color: aqua;
+        color: whitesmoke;
         margin-bottom: 0px;
         padding-bottom: 0px;
 
         &:hover {
-          border: 1px;
-          border-color: aqua;
+          border-bottom-width: thin;
+          border-color: whitesmoke;
           padding: 5px;
-          border-style: solid
+          border-bottom-style: solid
         }
       }
 
@@ -125,7 +125,7 @@ $grey-text: #747474;
         margin-bottom: 0;
         color:white;
       }
-      .BCEBCE:hover, .map-x:hover, .chattyApp:hover, .jungleRails:hover, .tweeter:hover, .wikiMap:hover, .tinyApp:hover .portfolio-card-p {
+  /*    .BCEBCE:hover, .map-x:hover, .chattyApp:hover, .jungleRails:hover, .tweeter:hover, .wikiMap:hover, .tinyApp:hover .portfolio-card-p {
         background-color: black;
         opacity: .80;
         border: 10px;
@@ -133,7 +133,7 @@ $grey-text: #747474;
         padding:5px;
 
 
-      }
+      }*/
     }
   }
 }
