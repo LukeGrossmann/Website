@@ -48,10 +48,10 @@ app.use("/api/users", usersRoutes(knex));
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/index_fall_winter", (req, res) => {
+app.get("/fall", (req, res) => {
   res.render("index_fall_winter");
 });
-app.get("/index_spring_summer", (req, res) => {
+app.get("/spring", (req, res) => {
   res.render("index_spring_summer");
 });
 
