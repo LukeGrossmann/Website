@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  // $('#jump').smoothScroll({speed:1500});
-
   $("button").click(function(){
     var target = $(this).attr("href");
     $(".content").not(target).hide();
