@@ -1,10 +1,4 @@
-// $(document).ready(function () {
-
-//   $("#footer").click(function(){
-//       window.location.href = "/index_fall_winter";
-//   });
-
-// });
+/* Make footer point to nav tab anchors */
 
 $(document).ready(function() {
 
