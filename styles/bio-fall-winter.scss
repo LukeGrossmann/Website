@@ -4,28 +4,24 @@
 }
 .text-50 {
   color:black;
-  text-shadow: white 0px 0px 50px;
 }
 .text-10 {
   color:black;
-  text-shadow: white 0px 0px 10px;
 }
 .p-bio {
   margin-top: 0;
 }
-.intro:hover, .text-50:hover, .text-10:hover {
-  background-color: white;
-  padding:10px;
-  border: 10px;
-  border-radius:10px;
-}
-.cover-photo {
+
+/* Styles for when cover photo is being displayed in bio.pug */
+
+/*.cover-photo {
   background-image: url("../photos/panoH@W.jpg");
   background-size: cover;
   background-position: center top;
   width: 100%;
   height: 350px;
-}
+}*/
+
 .profile-content {
   box-sizing: border-box;
   max-width: 800px;
@@ -60,14 +56,16 @@ blockquote {
   margin: 0;
   padding: 20px 0px;
   font-size: 36px;
-  color: #464;
+  font-weight: 100;
+  font-style: italic;
+  color: #333;
   line-height: 1.2;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .intro {
   font-size: 20px;
-  color: #black;
+  color: black;
   padding-top: 20px;
 }
 .h1-bio {
