@@ -4,7 +4,7 @@
 }
 #landing-2{
   height:100vh;
-  background:url(../photos/landscape2.jpg) no-repeat center center;
+  background:url(../photos/portfolio-top.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -14,7 +14,7 @@
   top: 0.5px;
 }
 #portfolio-2{
-  background:url(../photos/portfolio-opt-2.jpg) no-repeat center center;
+  background:url(../photos/portfolio-bottom.jpg) no-repeat center center;
   background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -42,7 +42,7 @@ a:hover,a:focus{text-decoration:none;}
   stroke-dashoffset: -474;
   stroke-width: 8px;
   fill: transparent;
-  stroke: #19f6e8;
+  stroke: white;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
@@ -51,7 +51,7 @@ a:hover,a:focus{text-decoration:none;}
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 8px;
-  color: #fff;
+  color: rgba(0,0,0,0.8) ;
   top: -48px;
   position: relative;
   text-align:center;
