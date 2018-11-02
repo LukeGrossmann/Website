@@ -6,23 +6,23 @@ $(document).ready(function () {
   $(window).on("load", function() {
 
 
-    function preloadImages(array) {
-        if (!preloadImages.list) {
-            preloadImages.list = [];
-        }
-        var list = preloadImages.list;
-        for (var i = 0; i < array.length; i++) {
-            var img = new Image();
-            img.onload = function() {
-                var index = list.indexOf(this);
-                if (index !== -1) {
-                    list.splice(index, 1);
-                }
-            }
-            list.push(img);
-            img.src = array[i];
-        }
-    }
+    // function preloadImages(array) {
+    //     if (!preloadImages.list) {
+    //         preloadImages.list = [];
+    //     }
+    //     var list = preloadImages.list;
+    //     for (var i = 0; i < array.length; i++) {
+    //         var img = new Image();
+    //         img.onload = function() {
+    //             var index = list.indexOf(this);
+    //             if (index !== -1) {
+    //                 list.splice(index, 1);
+    //             }
+    //         }
+    //         list.push(img);
+    //         img.src = array[i];
+    //     }
+    // }
 
     // if (date.getMonth() <= 3 || date.getMonth() > 7 ) {
     //   preloadImages(["../photos/landscape2.jpg", "../photos/panoH@W.jpg", "../photos/blue.jpg"]);
@@ -31,24 +31,24 @@ $(document).ready(function () {
     //   preloadImages(["../photos/Summer-landing.jpg", "../photos/Summer-bio3.jpg", "../photos/summer-portfolio.jpg"]);
 
     // }
-    var dt = new Date().toDateString();
-    document.getElementById("datetime").innerHTML = dt;
 
-    var d = new Date();
-    var time = d.getHours();
+    // var Date = new Date();
+    // // Grab month and date
+    // var dt = Date.toDateString();
+    // document.getElementById("datetime").innerHTML = dt;
 
-    if (time < 12) {
-      document.getElementById("greeting").innerHTML = "Good Morning";
-    }
-    if (time >= 12 && time < 17) {
-      document.getElementById("greeting").innerHTML = "Good Afternoon";
-    }
-    if (time >= 17) {
-      document.getElementById("greeting").innerHTML = "Good Evening";
-    }
+    // //grab time for conditionals
+    // var time = Date.getHours();
 
-    $(".middle-letter").css('color', 'black');
-
+    // if (time < 12) {
+    //   document.getElementById("greeting").innerHTML = "Good Morning";
+    // }
+    // if (time >= 12 && time < 17) {
+    //   document.getElementById("greeting").innerHTML = "Good Afternoon";
+    // }
+    // if (time >= 17) {
+    //   document.getElementById("greeting").innerHTML = "Good Evening";
+    // }
 
     function firstFadeIn (callback) {
       $(".overlay-loading").delay(2000).fadeOut("slow", function () {
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 
     function secondFadeIn () {
-      $('.welcome-background').delay(3500).fadeOut("slow", function () {
+      $('.welcome-background').delay(350000000).fadeOut("slow", function () {
         $('.background-background').fadeIn("slow");
     $(".remove").remove();
 
