@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 
     function secondFadeIn () {
-      $('.welcome-background').delay(350000000).fadeOut("slow", function () {
+      $('.welcome-background').delay(3500).fadeOut("slow", function () {
         $('.background-background').fadeIn("slow");
     $(".remove").remove();
 
