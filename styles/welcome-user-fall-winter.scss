@@ -1,5 +1,5 @@
 .welcome-background {
-  background: url('../photos/blue-hills.jpg');
+  background: url('../photos/welcome-page.jpg');
     background-size: cover;
     background-repeat:no-repeat;
     background-position:center;
@@ -23,17 +23,20 @@
     left: 0;
 
   }
-  .time {
+/*  .time {
     font-size: 4rem;
     font-weight: 700;
-  }
+  }*/
 }
-#datetime {
+/*#datetime {
+  font-family:sans-serif;
+  color: white;
+}*/
+/*#greeting {
+  font-size: 2rem;
   font-family:sans-serif;
   color:black;
-}
-
-
+}*/
 .custom-input, .btn-custom {
   border: 0;
   background: transparent;
@@ -53,11 +56,6 @@
 .display-5 {
   font-size: 1.5rem;
 }
-#greeting {
-  font-size: 2rem;
-  font-family:sans-serif;
-  color:black;
-}
 .center-welcome {
   padding-top:200px;
 }
@@ -68,26 +66,26 @@
   .display-5 {
     font-size: 2.5rem;
   }
-  #greeting {
+/*  #greeting {
     font-size: 2.5rem;
-  }
+  }*/
 }
 @media (min-width: 992px) {
   .background h1 {
     font-size: 6rem;
   }
-  #greeting {
+/*  #greeting {
     font-size: 3rem;
-  }
+  }*/
 }
 
 @media (min-width: 1200px) {
   .background h1 {
     font-size: 7.5rem;
   }
-  #greeting {
+/*  #greeting {
     font-size: 3.6rem;
-  }
+  }*/
 }
 
 .container {
