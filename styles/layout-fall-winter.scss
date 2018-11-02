@@ -8,13 +8,19 @@
 }
 .nav.nav-tabs {
   z-index: 3;
-  position: sticky;
-  top: 0.5px;
+  /* Make navbar scroll with page */
+
+  /*position: sticky;*/
+  /*top: 0.5px;*/
+}
+/* Make sure Nav tab background color is consistent with page background color */
+.nav-tabs .nav-link.active {
+  background-color: #fdfdff;
 }
 
 .background-background {
-  background-image: url("../photos/MainBackground.jpg");
-
+  /*background-image: url("../photos/tester21.jpg");*/
+  background-color: #fdfdff;
 
     background-size: cover;
     background-repeat:no-repeat;
