@@ -46,14 +46,17 @@ app.use("/api/users", usersRoutes(knex));
 
 // Home page
 app.get("/", (req, res) => {
-  res.render("index");
-});
-app.get("/fall", (req, res) => {
   res.render("index_fall_winter");
 });
-app.get("/spring", (req, res) => {
-  res.render("index_spring_summer");
-});
+
+// Routes for having multiple themes
+
+// app.get("/fall", (req, res) => {
+//   res.render("index_fall_winter");
+// });
+// app.get("/spring", (req, res) => {
+//   res.render("index_spring_summer");
+// });
 
 app.use(function(req, res, next){
   res.status(404);
