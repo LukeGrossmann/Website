@@ -3,7 +3,7 @@
 A portfolio web application to operate as a 'sandbox' mode to help broaden and strengthen my skill set.
 Deployed on Digital Ocean utilizing Nginx and PM2.
 
-##Built With
+## Built With
 ```
 Javascript
 Nodejs
@@ -21,11 +21,14 @@ Nginx
 ```
 
 ## Final Product
-!['Screenshot of Homepage with no users']()
-!['Screenshot of first user logging in their names']()
-!['Screenshot of first user sending a message']()
-!['Screenshot of third user sending a message']()
-!['Screenshot of first user Recieving messages from other users']()
+!['Screenshot of Loading screen'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-loading.png?raw=true)
+!['Screenshot of Welcome page'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-welcome.png?raw=true)
+!['Screenshot of About page'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-about.png?raw=true)
+!['Screenshot of Resume'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-resume.png?raw=true)
+!['Screenshot of Portoflio'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-portfolio.png?raw=true)
+!['Screenshot of Projects'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-projects.png?raw=true)
+!['Screenshot of Game'](https://github.com/ItsJustChewbacca/Website/blob/master/public/photos/readme-game.png?raw=true)
+
 
 
 
